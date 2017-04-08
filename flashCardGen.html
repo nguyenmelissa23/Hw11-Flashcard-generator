@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Flashcard Generator</title>
+</head>
+<body>
+    <div class="container jumbotron">
+        <h1>Flashcard Generator</h1>
+    </div>
+
+    <div class="container">
+        <h3>Create New Card</h3>
+        <p>Keyword <input type="text" placeholder="Type in your keyword" name='keyword'> </p>
+        <p>Definition <input type="text" placeholder="Type in your definition" name='definition'> </p>
+    </div>
+
+    <div class="container buttons rows" >
+        <input type="submit" class="btn btn-default offset-md-2 col-md-4 basicCard" value="Create Basic Card">
+        <input type="submit" class="btn btn-default col-md-4 pull-right clozeCard" value="Create Cloze Card"> 
+    </div>
+
+    <div class="container">
+        <div class="flashcard">
+            <div class="displayText">Your text will display here</div>
+        </div>
+    </div>
+    <!--Javascript Files-->
+    <script src="./assets/javascript/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    
+</body>
+</html>

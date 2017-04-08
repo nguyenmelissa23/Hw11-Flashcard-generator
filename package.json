@@ -1,0 +1,33 @@
+{
+  "name": "flashcard",
+  "version": "1.0.0",
+  "description": "flashcard generator",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nguyenmelissa23/Hw11-Flashcard-generator.git"
+  },
+  "keywords": [
+    "basic",
+    "cloze",
+    "full",
+    "partial",
+    "back",
+    "front",
+    "keyword",
+    "definition"
+  ],
+  "author": "melissa nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nguyenmelissa23/Hw11-Flashcard-generator/issues"
+  },
+  "homepage": "https://github.com/nguyenmelissa23/Hw11-Flashcard-generator#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "inquirer": "^3.0.6"
+  }
+}

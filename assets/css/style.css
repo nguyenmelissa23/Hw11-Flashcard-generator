@@ -1,0 +1,19 @@
+.container{
+    max-width: 800px;
+    text-align: center;
+}
+
+.flashcard {
+    border: solid 3px blue;
+    height: 50px;
+    text-align: center;
+}
+
+/*.displayText{
+    vertical-align: center;
+}*/
+
+.buttons{
+    padding: 5px;
+    margin: 20px;
+}
