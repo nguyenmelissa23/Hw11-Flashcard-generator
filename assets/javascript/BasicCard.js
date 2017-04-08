@@ -5,28 +5,29 @@ const BasicCard = function(front, back) {
     this.back = back;
     this.countFront = front.split(' ');
     this.countBack = back.split(' ');
+    const self = this;
     this.choicesArray = [
         {
            action: function(){
-               console.log('trying to run this.getFront.Text()');
-               console.log(this);
-               //this.getFrontText();
+               self.getFrontText();
             },
            text:'Get Front Text'
         }, 
         {
             action: function(){
-                this.getBackText();
+                self.getBackText();
             },
             text: 'Get BackText'
         }];
 
     this.getFrontText = function(){
         let placeHolder = this.addPlaceHolder(this.countBack);
+        console.log(this.front);
     };
 
     this.getBackText = function(){
         let placeHolder = this.addPlaceHolder(this.countFront);
+        console.log(this.back);
     };
 
     this.addPlaceHolder = function(text){

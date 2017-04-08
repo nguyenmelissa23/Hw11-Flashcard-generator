@@ -10,22 +10,23 @@ const ClozeCard = function(keyword, definition) {
     this.definition = definition;
     this.countKey = keyword.split(' ');
     this.countDef = definition.split(' ');
+    const self = this;
     this.choicesArray = [
         {
            action: function(){
-               this.getKeyword();
+               self.getKeyword();
             },
            text:'Get Cloze Part'
         }, 
         {
             action: function(){
-                this.getPartialText();
+                self.getPartialText();
             },
             text: 'Get Partial Text'
         },
         {
             action: function(){
-                this.getFullText();
+                self.getFullText();
             },
             text: 'Get Full Text'
         }
@@ -33,16 +34,16 @@ const ClozeCard = function(keyword, definition) {
     //method
     this.getKeyword = function() {
         let placeHolder = this.addPlaceHolder(this.countDef);
-        console.log(keyword + placeHolder);
+        console.log(this.keyword + placeHolder);
     };
 
     this.getPartialText = function() {
         let placeHolder = this.addPlaceHolder(this.countKey);
-        console.log(placeHolder + ' ' + definition);
+        console.log(placeHolder + ' ' + this.definition);
     };
     
     this.getFullText = function(){
-        console.log(keyword + " " + definition);
+        console.log(this.keyword + " " + definition);
     };
 
     this.addPlaceHolder = function(text){
@@ -50,7 +51,6 @@ const ClozeCard = function(keyword, definition) {
         for (let i = 0 ; i < text.length; i++){
             placeHolder += ' ____'; 
         }
-        console.log(placeHolder);
         return placeHolder;
     };
 };

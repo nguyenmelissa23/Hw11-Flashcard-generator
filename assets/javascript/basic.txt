@@ -1,1 +1,1 @@
-[{"front":"f","back":"d","countFront":["f"],"countBack":["d"],"choicesArray":[{"text":"Get Front Text"},{"text":"Get BackText"}]}]
+[{"front":"me","back":"hello there","countFront":["me"],"countBack":["hello","there"],"choicesArray":[{"text":"Get Front Text"},{"text":"Get BackText"}]}]
